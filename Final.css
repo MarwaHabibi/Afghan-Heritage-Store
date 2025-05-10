@@ -1,0 +1,264 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #8b0000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #c0392b;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Main content section */
+main {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+/* Product card style */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05rem);
+}
+
+.product-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 0.5px solid #f1f1f1;
+    border-radius: 10px;
+}
+
+.product-card .content {
+    padding: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-card table th,
+.product-card table td {
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.product-card button:hover {
+    background-color: #8b0000;
+}
+
+/* Footer section */
+footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+    color: #666;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Contact Section Styling */
+section#contact {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section#contact h2 {
+    text-align: center;
+    font-size: 1rem;
+    color: #8b0000;
+    margin-bottom: 1rem;
+}
+
+section#contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+    display: block;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #c0392b;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #8b0000;
+}
+
+/* Hidden class to hide the thank you message initially */
+
+#order-form-container {
+    transition: all 0.3s ease;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  #thank-you-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  #thank-you-message h2 {
+    color: #8b0000;
+    font-size: 2rem;
+  }

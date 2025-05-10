@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afghan Heritage Store</title>
+  <link rel="stylesheet" href="Final.css"/>
+  <script src="Java.js" defer></script>
+</head>
+<body>
+  
+  <!-- Header Section -->
+  <header>
+    <h1>Afghan Heritage Store</h1>
+    <p>Traditional Clothing & Foods</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#clothing">Clothing</a>
+    <a href="#foods">Foods</a>
+    <a href="#contact">Order Now</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Traditional Afghan Clothing Section -->
+    <section id="clothing">
+      <h2>Traditional Afghan Clothing</h2>
+
+      <!-- Product Card: Women's Kuchi Dress -->
+      <div class="product-card">
+        <img src="Afghan Dress Waziri Afghani Kuchi Kochi Ghand Afghani Waziristan Bohemian Gujarati - Etsy.jpeg" alt="Afghan Dress" />
+        <div class="content">
+          <h3>Women's Kuchi Dress</h3>
+          <p>A beautiful handmade Kuchi dress with traditional embroidery.</p>
+          <table>
+            <tr><th>Size</th><th>Price</th></tr>
+            <tr><td>Small</td><td>$50</td></tr>
+            <tr><td>Medium</td><td>$55</td></tr>
+            <tr><td>Large</td><td>$60</td></tr>
+          </table><br>
+          <button>Order Now</button>
+        </div>
+      </div>
+      <br>
+      <!-- Product Card: Men's Perahan Tunban -->
+      <div class="product-card">
+        <img src="Traditional Afghan Perahan o Tunban for Men - Elegant Green with Intricate Embroidery.jpeg" alt="Afghan Men's Dress" />
+        <div class="content">
+          <h3>Men's Perahan Tunban</h3>
+          <p>Elegant, traditional Afghan men's perahan tunban.</p>
+          <table>
+            <tr><th>Color</th><th>Price</th></tr>
+            <tr><td>White</td><td>$35</td></tr>
+            <tr><td>Beige</td><td>$37</td></tr>
+          </table><br>
+          <button>Order Now</button>
+        </div>
+      </div>
+    <br>
+    <!-- Afghan Foods -->
+      <h2>Afghan Foods</h2>
+      <!-- Product Card: Bolani -->
+      <div class="product-card">
+        <img src="photo_2025-05-10_16-01-41.jpg" alt="The History of Afghanistan" />
+        <div class="content">
+          <h3>Bolani</h3>
+          <p>A crispy handmade Afghan flatbread, filled with seasoned potatoes or leeks.</p>
+          <table>
+            <tr><th>Size</th><th>Price</th></tr>
+            <tr><td>Each</td><td>$5</td></tr>
+          </table><br>
+          <button>Order Now</button>
+        </div>
+      </div>
+      <br>
+      <!-- Product Card: Qabeli Palaw -->
+      <div class="product-card">
+        <img src="photo_2025-05-10_16-01-09.jpg" alt="Afghan Folklore" />
+        <div class="content">
+          <h3>Qabeli Palaw</h3>
+          <p>Traditional Afghan rice topped with carrots, raisins, and tender lamb.</p>
+          <table>
+            <tr><th>Size</th><th>Price</th></tr>
+            <tr><td>Per Plate</td><td>$10</td></tr>
+          </table><br>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </section>
+    <br>
+  </main>
+  <section id="contact">
+    <h2 id="order-title">Order Now</h2>
+    <div id="order-form-container">
+      <p>Interested in any product? Fill out the form below to place your order or ask questions:</p>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+    
+        <label for="product">Product Interested In:</label>
+        <select id="product" name="product">
+          <option value="kuchi">Women's Kuchi Dress</option>
+          <option value="perahan">Men's Perahan Tunban</option>
+          <option value="history">The History of Afghanistan</option>
+          <option value="folklore">Afghan Folklore and Stories</option>
+        </select>
+    
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+    
+    <div id="thank-you-message" class="hidden">
+      <h2>Thank you for your submission!</h2>
+    </div>
+  </section>
+
+  </div>
+  <footer>
+    <p>© 2025 By Marwa Habibib</p>
+  </footer>
+
+</body>
+</html>
